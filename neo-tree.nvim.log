@@ -1,0 +1,193 @@
+[INFO  2026-08-16-21:59:44] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: false
+[INFO  2026-08-16-21:59:44] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: true
+[INFO  2026-08-16-21:59:45] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: false
+[INFO  2026-08-16-21:59:46] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: true
+[INFO  2026-08-16-21:59:47] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: false
+[INFO  2026-08-16-21:59:47] ...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:281: Toggling hidden files: true
+[ERROR 2026-08-16-22:05:57] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[ERROR 2026-08-16-22:13:39] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[ERROR 2026-08-16-22:17:11] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[ERROR 2026-08-16-22:17:36] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[ERROR 2026-08-16-22:24:15] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[ERROR 2026-08-16-22:32:01] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: vim/_editor.lua:445: nvim_exec2()[1]..BufReadPost Автокоманды для "*": Vim(append):Error executing lua callback: /usr/share/nvim/runtime/filetype.lua:36: nvim_exec2()[1]..BufReadPost Автокоманды для "*"..FileType Автокоманды для "*"..function <SNR>1_LoadFTPlugin[20]..script /usr/share/nvim/runtime/ftplugin/lua.lua: Vim(runtime):E5113: Error while calling lua chunk: /usr/share/nvim/runtime/lua/vim/treesitter.lua:431: Parser could not be created for buffer 3 and language "lua"
+stack traceback:
+	[C]: in function 'assert'
+	/usr/share/nvim/runtime/lua/vim/treesitter.lua:431: in function 'start'
+	/usr/share/nvim/runtime/ftplugin/lua.lua:2: in main chunk
+	[C]: in function 'nvim_cmd'
+	/usr/share/nvim/runtime/filetype.lua:36: in function </usr/share/nvim/runtime/filetype.lua:35>
+	[C]: in function 'pcall'
+	vim/shared.lua:1378: in function <vim/shared.lua:1358>
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+stack traceback:
+	[C]: in function '_with'
+	/usr/share/nvim/runtime/filetype.lua:35: in function </usr/share/nvim/runtime/filetype.lua:10>
+	[C]: in function 'nvim_exec2'
+	vim/_editor.lua:445: in function <vim/_editor.lua:441>
+	[C]: in function 'pcall'
+	...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:857: in function 'open_file'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:843: in function 'open'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:865: in function 'open_with_cmd'
+	...y/neo-tree.nvim/lua/neo-tree/sources/common/commands.lua:873: in function 'open'
+	...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:214: in function <...o-tree.nvim/lua/neo-tree/sources/filesystem/commands.lua:213>
+[INFO  2026-08-16-23:23:15] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:680: Deleted directory  /home/werg567og/.git
+[WARN  2026-08-18-23:09:20] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:526: File already exists
+[WARN  2026-08-20-00:50:03] ....nvim/lua/neo-tree/sources/filesystem/lib/fs_actions.lua:526: File already exists
+[ERROR 2026-08-20-18:09:15] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: [string "vim/_core/editor"]:355: nvim_exec2(), line 1: Vim(edit):E325: ATTENTION
+[ERROR 2026-08-20-21:46:55] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: [string "vim/_core/editor"]:355: nvim_exec2(), line 1: Vim(buffer):E325: ATTENTION
+[ERROR 2026-08-20-22:56:30] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: [string "vim/_core/editor"]:355: nvim_exec2(), line 1: Vim(buffer):E325: ATTENTION
+[ERROR 2026-08-21-00:24:56] ...hare/nvim/lazy/neo-tree.nvim/lua/neo-tree/utils/init.lua:879: Error opening file: [string "vim/_core/editor"]:355: nvim_exec2(), line 1: Vim(edit):E325: ATTENTION
