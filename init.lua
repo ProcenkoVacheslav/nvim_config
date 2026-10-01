@@ -5,6 +5,7 @@ vim.g.maplocalleader = " "
 -- 1. Подключаем настройки интерфейса, автокоманды и хаки
 require("core.options")
 require("core.autocmds")
+require("core.cpp_manager")
 
 -- 2. Путь к менеджеру плагинов lazy.nvim и установка
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
