@@ -99,20 +99,19 @@ function M.handle_file_deletion(filepath)
 end
 
 -- Оставляем классические автокоманды для работы через :e
-local cpp_project_group = vim.api.nvim_create_augroup("CppProjectManager", { clear = true })
-vim.api.nvim_create_autocmd("BufNewFile", {
-  group = cpp_project_group,
-  pattern = "*.hpp",
-  callback = function()
-    local filepath = vim.fn.expand("<afile>:p")
-    local correct_hpp = M.handle_file_creation(filepath)
-    if correct_hpp then
-      vim.cmd("bdelete!")
-      vim.cmd("edit " .. vim.fn.fnameescape(correct_hpp))
-    end
-  end,
-})
-
+-- local cpp_project_group = vim.api.nvim_create_augroup("CppProjectManager", { clear = true })
+-- vim.api.nvim_create_autocmd("BufNewFile", {
+--   group = cpp_project_group,
+--   pattern = "*.hpp",
+--   callback = function()
+--     local filepath = vim.fn.expand("<afile>:p")
+--     local correct_hpp = M.handle_file_creation(filepath)
+--     if correct_hpp then
+--       vim.cmd("bdelete!")
+--       vim.cmd("edit " .. vim.fn.fnameescape(correct_hpp))
+--     end
+--   end,
+-- })
 
 -- Функция для асинхронной сборки и запуска SFML проекта
 function M.build_and_run()

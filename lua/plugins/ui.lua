@@ -85,41 +85,41 @@ return {
       },
       
       -- ИНТЕГРАЦИЯ НАШЕГО СКРИПТА АВТОМАТИЗАЦИИ ДЛЯ C++
-      event_handlers = {
-        {
-          event = "file_added",
-          handler = function(filepath)
-            local cpp_manager = require("core.cpp_manager")
-            local correct_hpp, filename = cpp_manager.handle_file_creation(filepath)
-            
-            if correct_hpp then
-              -- Избавляемся от ошибочного файла, который neo-tree успел кинуть в корень
-              if vim.fn.filereadable(filepath) == 1 and filepath ~= correct_hpp then
-                vim.fn.delete(filepath)
-              end
-              
-              -- Мягкая задержка, чтобы дать Neo-tree завершить отрисовку
-              vim.defer_fn(function()
-                require("neo-tree.sources.manager").refresh("filesystem")
-                vim.cmd("edit " .. vim.fn.fnameescape(correct_hpp))
-                vim.notify("Успешно создана C++ пара для " .. filename, vim.log.levels.INFO)
-              end, 100)
-            end
-          end,
-        },
-        {
-          event = "file_deleted",
-          handler = function(filepath)
-            local cpp_manager = require("core.cpp_manager")
-            cpp_manager.handle_file_deletion(filepath)
-            
-            -- Обновляем дерево интерфейса после фонового удаления парного файла
-            vim.defer_fn(function()
-              require("neo-tree.sources.manager").refresh("filesystem")
-            end, 100)
-          end,
-        },
-      },
+      -- event_handlers = {
+      --   {
+      --     event = "file_added",
+      --     handler = function(filepath)
+      --       local cpp_manager = require("core.cpp_manager")
+      --       local correct_hpp, filename = cpp_manager.handle_file_creation(filepath)
+      --
+      --       if correct_hpp then
+      --         -- Избавляемся от ошибочного файла, который neo-tree успел кинуть в корень
+      --         if vim.fn.filereadable(filepath) == 1 and filepath ~= correct_hpp then
+      --           vim.fn.delete(filepath)
+      --         end
+      --
+      --         -- Мягкая задержка, чтобы дать Neo-tree завершить отрисовку
+      --         vim.defer_fn(function()
+      --           require("neo-tree.sources.manager").refresh("filesystem")
+      --           vim.cmd("edit " .. vim.fn.fnameescape(correct_hpp))
+      --           vim.notify("Успешно создана C++ пара для " .. filename, vim.log.levels.INFO)
+      --         end, 100)
+      --       end
+      --     end,
+      --   },
+      --   {
+      --     event = "file_deleted",
+      --     handler = function(filepath)
+      --       local cpp_manager = require("core.cpp_manager")
+      --       cpp_manager.handle_file_deletion(filepath)
+      --
+      --       -- Обновляем дерево интерфейса после фонового удаления парного файла
+      --       vim.defer_fn(function()
+      --         require("neo-tree.sources.manager").refresh("filesystem")
+      --       end, 100)
+      --     end,
+      --   },
+      -- },
     })
   end
 },

@@ -80,26 +80,22 @@ local function run_current_file()
     end,
   })
 end
--- Привязка клавиш
 
 vim.keymap.set("n", "<leader>r", run_current_file, { silent = true })
 vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", { silent = true })
 
--- Открыть/закрыть дерево файлов на Space + e (если лидер-клавиша установлена на Space)
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { silent = true })
 
 vim.keymap.set('n', '<M-h>', ':BufferLineCyclePrev<CR>', { silent = true })
 vim.keymap.set('n', '<M-l>', ':BufferLineCycleNext<CR>', { silent = true })
 
--- 2. Аккуратное закрытие текущей вкладки на Space + x (без потери фокуса)
 vim.keymap.set('n', '<leader>x', ':Bdelete<CR>', { silent = true })
 
--- 3. Быстрое открытие/закрытие бокового дерева файлов на Space + e
 vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { silent = true })
--- Шорткат <Leader>gr сбросит текущий файл к последнему коммиту и обновит буфер
 vim.keymap.set('n', '<Leader>gr', ':!git checkout HEAD -- %<CR>:e!<CR>', { silent = true, desc = "Откатить файл к коммиту" })
 
--- Запуск сборки и выполнения C++ проекта по Leader + Shift + R
 vim.keymap.set("n", "<leader>R", function()
   require("core.cpp_manager").build_and_run()
 end, { desc = "CMake: Собрать и запустить проект" })
+
+vim.keymap.set('i', '<C-Space>', '<C-^>', { desc = "Переключить раскладку" })
